@@ -1,0 +1,9 @@
+
+’
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(°¤¨Úşÿÿÿÿ
+G
+java:S1181 "%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8ù³¥Ÿˆ0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Óºêšüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(­òÕ¾şÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ù©¾ıÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(«Üƒúÿÿÿÿ

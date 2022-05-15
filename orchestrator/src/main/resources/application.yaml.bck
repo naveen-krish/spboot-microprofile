@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: orchestrator
+  server:
+    port: 8089
+resilience4j.retry:
+  configs:
+    default:
+      maxAttempts: 3
+      waitDuration: 1000
+  instances:
+    retryAccounts:
+      baseConfig: default
+    retryAddress:
+      baseConfig: default
+service:
+  endpoints:
+    customer: http://localhost:8085
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/microservices_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+     hibernate:
+     ddl-auto: update
+    #spring.jpa.show-sql: true

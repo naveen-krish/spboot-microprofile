@@ -1,0 +1,35 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(ó¬ô©üÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(à™­¯şÿÿÿÿ
+E
+java:S3740$"/Provide the parametrized type for this generic.(à¿ññ
+E
+java:S3740-"/Provide the parametrized type for this generic.(Ğòö¬
+E
+java:S37401"/Provide the parametrized type for this generic.(Û•©ê
+J
+java:S37402"/Provide the parametrized type for this generic.(à™­¯şÿÿÿÿ
+E
+java:S37408"/Provide the parametrized type for this generic.(å¿µ«
+E
+java:S3740="/Provide the parametrized type for this generic.(Ğòö¬
+Ã
+java:S1130"§Remove the declaration of thrown exception 'lab.spboot.microservices.orchestrator.exception.AccountCreationFailedException', as it cannot be thrown from method's body.(ó¬ô©üÿÿÿÿ
+W
+java:S3457"AFormat specifiers should be used instead of string concatenation.(ë×¢±
+U
+java:S1854)":Remove this useless assignment to local variable "result".(ê‘²úÿÿÿÿ
+F
+java:S1481)"+Remove this unused "result" local variable.(ê‘²úÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(ş×ÉÖúÿÿÿÿ
+¿
+java:S11301"¨Remove the declaration of thrown exception 'lab.spboot.microservices.orchestrator.exception.AccountsReversalFailedException', as it cannot be thrown from method's body.(Û•©ê
+V
+java:S34573"AFormat specifiers should be used instead of string concatenation.(÷Ï·i
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(…Ü¤Œÿÿÿÿÿ8ù ÿÑ†0
+r
+java:S2629"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ë×¢±
+x
+java:S26293"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(÷Ï·i8•²ÿÑ†0

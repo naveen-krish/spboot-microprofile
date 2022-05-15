@@ -1,0 +1,120 @@
+
+[	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(íÇ¥ 
+J
+java:S3740O"/Provide the parametrized type for this generic.(Ÿ™çœÿÿÿÿÿ
+J
+java:S3740S"/Provide the parametrized type for this generic.(ğë«ºùÿÿÿÿ
+J
+java:S3740X"/Provide the parametrized type for this generic.(ÚŞÜÜøÿÿÿÿ
+J
+java:S3740m"/Provide the parametrized type for this generic.(üä—Èûÿÿÿÿ
+J
+java:S3740s"/Provide the parametrized type for this generic.(­Ëäıÿÿÿÿ
+K
+java:S3740"/Provide the parametrized type for this generic.(üä—Èûÿÿÿÿ
+K
+java:S3740—"/Provide the parametrized type for this generic.(™ÎÙáÿÿÿÿÿ
+K
+java:S3740—"/Provide the parametrized type for this generic.(™ÎÙáÿÿÿÿÿ
+K
+java:S3740—"/Provide the parametrized type for this generic.(™ÎÙáÿÿÿÿÿ
+K
+java:S3740¢"/Provide the parametrized type for this generic.(îª£Šÿÿÿÿÿ
+E
+java:S3740ª"/Provide the parametrized type for this generic.(—Ôï
+E
+java:S3740ª"/Provide the parametrized type for this generic.(—Ôï
+F
+java:S3740³"/Provide the parametrized type for this generic.(ÒÚí‘
+F
+java:S3740³"/Provide the parametrized type for this generic.(ÒÚí‘
+F
+java:S3740³"/Provide the parametrized type for this generic.(ÒÚí‘
+|
+java:S1450)"aRemove the "customerStaticInfo" field and declare it as a local variable in the relevant methods.(¡ö—ãøÿÿÿÿ
+}
+java:S1450*"bRemove the "customerStaticInfo1" field and declare it as a local variable in the relevant methods.(²À§ğøÿÿÿÿ
+Q	java:S125-"<This block of commented-out lines of code should be removed.(Û“¤
+L
+java:S26961"6Make the enclosing method "static" or remove this set.(¨ÎÄã
+L
+java:S26966"6Make the enclosing method "static" or remove this set.(­şùö
+@
+java:S3457F"%String contains no format specifiers.(·óæËúÿÿÿÿ
+Q	java:S125C"<This block of commented-out lines of code should be removed.(Õçáå
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(œº”öøÿÿÿÿ
+N	java:S106L"9Replace this use of System.out or System.err by a logger.(ŸŒêĞ
+S	java:S106M"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106Q"9Replace this use of System.out or System.err by a logger.(Ú³÷Á
+S	java:S106R"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(ğÔÔ
+S	java:S106W"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+M	java:S106Z"9Replace this use of System.out or System.err by a logger.(¸Ö×
+S	java:S106["9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106_"9Replace this use of System.out or System.err by a logger.(½Ô†â
+N	java:S106b"9Replace this use of System.out or System.err by a logger.(Šª‰
+Q	java:S125d"<This block of commented-out lines of code should be removed.(÷®°
+S	java:S106n"9Replace this use of System.out or System.err by a logger.(·ÊŒ±şÿÿÿÿ
+S	java:S106o"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106q"9Replace this use of System.out or System.err by a logger.(çË‘õ
+S	java:S106r"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+M	java:S106u"9Replace this use of System.out or System.err by a logger.(¸Ö×
+S	java:S106v"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T	java:S106‚"9Replace this use of System.out or System.err by a logger.(·ÊŒ±şÿÿÿÿ
+T	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T	java:S106…"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106†"9Replace this use of System.out or System.err by a logger.(¸Ö×
+T	java:S106‡"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(ü•æØ
+T	java:S106‘"9Replace this use of System.out or System.err by a logger.(«¾¨óûÿÿÿÿ
+T	java:S106“"9Replace this use of System.out or System.err by a logger.(ãĞ³¥úÿÿÿÿ
+O	java:S106˜"9Replace this use of System.out or System.err by a logger.(ü•æØ
+T	java:S106™"9Replace this use of System.out or System.err by a logger.(«¾¨óûÿÿÿÿ
+T	java:S106›"9Replace this use of System.out or System.err by a logger.(ãĞ³¥úÿÿÿÿ
+P
+java:S2864"4Iterate over the "entrySet" instead of the "keySet".(¨”Éÿÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(·øøãùÿÿÿÿ
+O	java:S106£"9Replace this use of System.out or System.err by a logger.(ü•æØ
+T	java:S106¤"9Replace this use of System.out or System.err by a logger.(«¾¨óûÿÿÿÿ
+P
+java:S2864¥"4Iterate over the "entrySet" instead of the "keySet".(¨”Éÿÿÿÿÿ
+T	java:S106¦"9Replace this use of System.out or System.err by a logger.(¨°úğûÿÿÿÿ
+O	java:S106«"9Replace this use of System.out or System.err by a logger.(ü•æØ
+T	java:S106¬"9Replace this use of System.out or System.err by a logger.(«¾¨óûÿÿÿÿ
+P
+java:S2864®"4Iterate over the "entrySet" instead of the "keySet".(¨”Éÿÿÿÿÿ
+O	java:S106¯"9Replace this use of System.out or System.err by a logger.(ú’†´
+O	java:S106´"9Replace this use of System.out or System.err by a logger.(ü•æØ
+T	java:S106µ"9Replace this use of System.out or System.err by a logger.(«¾¨óûÿÿÿÿ
+P
+java:S2864·"4Iterate over the "entrySet" instead of the "keySet".(¨”Éÿÿÿÿÿ
+T	java:S106¸"9Replace this use of System.out or System.err by a logger.(·øøãùÿÿÿÿ
+^
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.databind.ObjectMapper'.(´‘¨™
+w
+java:S1128	"\Remove this unused import 'lab.spboot.microservices.orchestrator.feign.AccountsFeignClient'.(æ¢¨×ùÿÿÿÿ
+q
+java:S1128
+"[Remove this unused import 'lab.spboot.microservices.orchestrator.feign.AddressFeignClient'.(ñ›‰²
+w
+java:S1128"\Remove this unused import 'lab.spboot.microservices.orchestrator.feign.AnagrafeFeignClient'.(úòÑıùÿÿÿÿ
+t
+java:S2293+"YReplace the type specification in this constructor call with the diamond operator ("<>").(â±‹Öşÿÿÿÿ
+`
+java:S1192"IDefine a constant instead of duplicating this literal "UserName" 5 times.(ü•æØ
+i
+java:S1192‘"MDefine a constant instead of duplicating this literal "------------" 5 times.(«¾¨óûÿÿÿÿ
+_
+java:S1192"HDefine a constant instead of duplicating this literal "Address" 5 times.(ü•æØ
+e
+java:S1192"NDefine a constant instead of duplicating this literal "AccountNumber" 5 times.(ü•æØ
+g
+java:S1192‘"KDefine a constant instead of duplicating this literal "----------" 5 times.(«¾¨óûÿÿÿÿ
+r
+java:S1192"[Define a constant instead of duplicating this literal "%-12s %-12s %-12s %-12s%n" 16 times.(ü•æØ
+x
+java:S1192Z"cDefine a constant instead of duplicating this literal "***** UPDATED USER DATABASE ******" 3 times.(¸Ö×
+d
+java:S1192‘"HDefine a constant instead of duplicating this literal "-------" 5 times.(«¾¨óûÿÿÿÿ
+?
+java:S2629F"$Invoke method(s) only conditionally.(·óæËúÿÿÿÿ

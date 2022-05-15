@@ -1,0 +1,13 @@
+
+]	java:S125$"<This block of commented-out lines of code should be removed.(ŒÖèøÿÿÿÿ8ÇÓ¢Â‰0
+]	java:S125)"<This block of commented-out lines of code should be removed.(òß¿•üÿÿÿÿ8•¿£ô†0
+q
+java:S1128"ORemove this unused import 'com.fasterxml.jackson.core.JsonProcessingException'.(ßÔïÇûÿÿÿÿ8óÈª¤ˆ0
+e
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.databind.ObjectMapper'.(´‘¨™8ôÈª¤ˆ0
+g
+java:S1128"JRemove this unused import 'com.vladmihalcea.hibernate.type.json.JsonType'.(¹ø•8ôÈª¤ˆ0
+4
+java:S1700!"Rename field "apiRequest"(«Š¹Ùÿÿÿÿÿ
+N
+java:S1710"8Remove the 'TypeDefs' wrapper from this annotation group(ñâ©”

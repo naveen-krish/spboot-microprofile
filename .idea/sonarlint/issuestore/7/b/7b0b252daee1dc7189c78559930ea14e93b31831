@@ -1,0 +1,45 @@
+
+J
+java:S3740#"/Provide the parametrized type for this generic.(©ï´Ûúÿÿÿÿ
+J
+java:S3740$"/Provide the parametrized type for this generic.(à™­¯şÿÿÿÿ
+D
+java:S3740*"/Provide the parametrized type for this generic.(Ü®u
+E
+java:S37406"/Provide the parametrized type for this generic.(Ğòö¬
+D
+java:S3740:"/Provide the parametrized type for this generic.(ıïú'
+J
+java:S3740;"/Provide the parametrized type for this generic.(à™­¯şÿÿÿÿ
+E
+java:S3740A"/Provide the parametrized type for this generic.(Å–éÁ
+E
+java:S3740K"/Provide the parametrized type for this generic.(Ğòö¬
+Ã
+java:S1130#"§Remove the declaration of thrown exception 'lab.spboot.microservices.orchestrator.exception.AddressCreationFailedException', as it cannot be thrown from method's body.(©ï´Ûúÿÿÿÿ
+\
+java:S3457%"AFormat specifiers should be used instead of string concatenation.(Ü÷Ûêûÿÿÿÿ
+U
+java:S18540":Remove this useless assignment to local variable "result".(ê‘²úÿÿÿÿ
+M
+java:S14810"+Remove this unused "result" local variable.(ê‘²úÿÿÿÿ8¾çûı‡0
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(¡ºÿ
+]	java:S1251"<This block of commented-out lines of code should be removed.(‚ÏÁ¥øÿÿÿÿ8²çûı‡0
+]	java:S1253"<This block of commented-out lines of code should be removed.(¿¸¯îøÿÿÿÿ8—©âı‡0
+½
+java:S1130:"§Remove the declaration of thrown exception 'lab.spboot.microservices.orchestrator.exception.AddressReversalFailedException', as it cannot be thrown from method's body.(ıïú'
+\
+java:S3457<"AFormat specifiers should be used instead of string concatenation.(–…“Ìıÿÿÿÿ
+\
+java:S1854G":Remove this useless assignment to local variable "result".(ê‘²úÿÿÿÿ8Ê“„ş‡0
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(Ú¸ÿğıÿÿÿÿ
+M
+java:S1481G"+Remove this unused "result" local variable.(ê‘²úÿÿÿÿ8Í“„ş‡0
+v
+java:S1128"TRemove this unused import 'lab.spboot.microservices.orchestrator.domain.ApiRequest'.(·Ÿú‘øÿÿÿÿ8Ï“„ş‡0
+ˆ
+java:S1128"kRemove this unused import 'lab.spboot.microservices.orchestrator.exception.AccountCreationFailedException'.(ß¡°8Ğ“„ş‡0
+w
+java:S2629%"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(Ü÷Ûêûÿÿÿÿ
+w
+java:S2629<"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(–…“Ìıÿÿÿÿ

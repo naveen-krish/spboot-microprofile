@@ -1,0 +1,13 @@
+
+Y
+java:S1214"CMove constants defined in this interfaces to another class or enum.(ˆæÏ
+Q	java:S125"<This block of commented-out lines of code should be removed.(£ş³
+
+java:S1128"dRemove this unused import 'lab.spboot.microservices.anagrafemicroservice.client.AddressFeignClient'.(ñƒºİ8ƒêÃå‰0
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8ƒêÃå‰0
+`
+java:S1128
+"CRemove this unused import 'org.springframework.stereotype.Service'.(¼º¡Ú8„êÃå‰0
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8…êÃå‰0
