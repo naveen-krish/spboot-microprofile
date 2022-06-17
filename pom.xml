@@ -17,5 +17,7 @@
     <module>gateway</module>
     <module>springboot-db</module>
     <module>saga</module>
+    <module>-springboot-kafka-consumer--main</module>
+    <module>springboot-kafka-producer-main</module>
   </modules>
 </project>

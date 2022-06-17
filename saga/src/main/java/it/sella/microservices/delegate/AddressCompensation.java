@@ -2,23 +2,27 @@ package it.sella.microservices.delegate;
 
 import it.sella.microservices.constants.ProcessConstants;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.json.JSONObject;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class AddressCompensation implements SagaCompensation {
 
-    private final Logger LOGGER = LoggerFactory.getLogger(AddressCompensation.class);
+    private final Logger LOG = Logger.getLogger(AddressCompensation.class.getName());
 
     @Override
     public void execute(DelegateExecution execution) throws Exception {
 
         RestTemplate restTemplate = new RestTemplate();
-
+        LOG.log(Level.INFO,"EXECUTING COMPENSATION TRANSACTION SAGA -> {0} ", "AnagrafeSaga");
         final String baseUrl = ProcessConstants.ADDRESS_ROLLBACK_SERVICE_URL;
 
         URI uri = null;
@@ -28,16 +32,27 @@ public class AddressCompensation implements SagaCompensation {
             e.printStackTrace();
         }
         try {
-            Integer address_entity_id = Integer.valueOf((String) execution.getVariable(ProcessConstants.ADDRESS_ENTITY));
-           // System.out.println(" Address Id -> " + address_entity_id);
-          //  Thread.sleep(10000);
-            ResponseEntity<String> result = restTemplate.postForEntity(uri, address_entity_id, String.class);
-            System.out.println("*** Executing Address Compensation -> " +address_entity_id+ " status -> " + result.getStatusCode());
+            JSONObject json = new JSONObject(String.valueOf(execution.getVariable(ProcessConstants.ADDRESS_ENTITY)));
+            String address_entity_id = String.valueOf(json.get("entity_id"));
+            LOG.log(Level.INFO,"[ {0} ] INVOKING COMPENSATION-ENDPOINT -> {1} -> {2} ", new Object[]{"AnagrafeSaga",getMicroServiceName(ProcessConstants.ADDRESS_ROLLBACK_SERVICE_URL),address_entity_id});
+
+            //  Thread.sleep(10000);
+            restTemplate.put(ProcessConstants.ADDRESS_ROLLBACK_SERVICE_URL, new Object[]{address_entity_id});
+
+            //     ResponseEntity<String> result = restTemplate.postForEntity(uri, address_entity_id, String.class);
+         //   System.out.println("*** Executing Address Compensation -> " + address_entity_id + " status -> ");
 
         } catch (Exception e) {
-            System.out.println(" Anagrafe Compensation Error -> " + e.getMessage());
+         //   System.out.println(" Anagrafe Compensation Error -> " + e.getMessage());
             throw new Exception(e.getMessage());
         }
+    }
+
+    private static Pattern pattern = Pattern.compile(".*/([^/#|?]*)(#.*|$)");
+
+    public  String getMicroServiceName(String url) {
+        Matcher matcher = pattern.matcher(url);
+        return matcher.find() ? matcher.group(1) : null;
     }
 
 }

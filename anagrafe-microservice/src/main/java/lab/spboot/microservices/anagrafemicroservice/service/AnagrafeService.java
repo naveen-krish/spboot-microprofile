@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class AnagrafeService {
 
-   // private Map<Integer, String> customerMap;
+    // private Map<Integer, String> customerMap;
     @Autowired
     AnagrafeRepository repository;
 
@@ -23,13 +23,16 @@ public class AnagrafeService {
         return repository.save(customer);
     }
 
-    public void removeCustomer(String id){
+    public void removeCustomer(String id) {
 
-        try{
-            Thread.sleep(10000);
-        }catch(Exception e){
+        try {
+            Thread.sleep(2000);
 
+            System.out.println(" Rollbacking Anagrafe object " + id);
+            if (repository.existsById(Integer.valueOf(id)))
+                repository.deleteById(Integer.valueOf(id));
+        } catch (Exception e) {
+            System.out.println("Anagrafe Delete Customer ->"+e.getMessage());
         }
-        repository.deleteById(Integer.valueOf(id));
     }
 }

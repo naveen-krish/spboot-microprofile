@@ -19,7 +19,7 @@ public class Account implements Serializable {
     private Integer id;
 
     private int account;
-    private double accountBalance;
+    private long accountBalance;
 
     @Override
     public String toString() {

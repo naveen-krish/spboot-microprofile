@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/accounts-microservcie/pom.xml" />
         <option value="$PROJECT_DIR$/../springboot-db/pom.xml" />
         <option value="$PROJECT_DIR$/saga/pom.xml" />
+        <option value="$PROJECT_DIR$/-springboot-kafka-consumer--main/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-kafka-producer-main/pom.xml" />
       </list>
     </option>
   </component>

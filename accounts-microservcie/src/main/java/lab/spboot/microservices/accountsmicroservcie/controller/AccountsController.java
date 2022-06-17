@@ -21,7 +21,8 @@ public class AccountsController {
     @PostMapping("/createAccount")
     public ResponseEntity<String> createAccount(@RequestBody Account account){
         logger.info(" << Accounts Controller >> ",account);
-        return ResponseEntity.ok(String.valueOf(accountsService.addAccount(account)));
+        Account accountEntity = accountsService.addAccount(account);
+        return ResponseEntity.ok(String.valueOf(accountEntity.getId()));
     }
 
     @PostMapping("/deleteAccount")

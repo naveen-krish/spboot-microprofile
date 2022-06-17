@@ -29,8 +29,14 @@ public class AddressService {
 
     public void removeAddress(String id) {
 
+        try{
          System.out.println(" Rollbacking Address object "+id);
-         addressRepository.deleteById(Integer.valueOf(id));
+        if(addressRepository.existsById(Integer.valueOf(id)))
+             addressRepository.deleteById(Integer.valueOf(id));
+
+    } catch (Exception e) {
+        System.out.println("Address Delete  ->"+e.getMessage());
+    }
 
     }
 }

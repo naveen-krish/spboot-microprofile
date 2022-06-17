@@ -2,6 +2,7 @@ package lab.spboot.microservices.addressmicroservice.controller;
 
 import lab.spboot.microservices.addressmicroservice.domain.Address;
 import lab.spboot.microservices.addressmicroservice.service.AddressService;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,16 +23,17 @@ public class AddressController {
         return new Address();
     }
 
-    @PostMapping("/createAddress")
-    public ResponseEntity<String> createAddress(@RequestBody Address address){
-
+    @PostMapping(value ="/createAddress" ,produces = "application/json")
+    public String createAddress(@RequestBody Address address){
+        System.out.println(" Address Customer Payload "+ address.getAddress1());
         Address addressEntity = addressService.addAddress(address);
         int id = addressEntity.getId();
-        logger.info(" << Address Controller >> ",id);
-          return ResponseEntity.ok(String.valueOf(id));
+        JSONObject entity = new JSONObject();
+        entity.put("entity_id", String.valueOf(id));
+        return entity.toString();
     }
 
-    @PostMapping("/deleteAddress")
+    @PutMapping("/deleteAddress")
     public void deleteAddress(@RequestBody String id){
         addressService.removeAddress(id);
     }

@@ -32,7 +32,7 @@ public class MicroServiceSagaProcessEngine {
 
             for (SagaWorkFlowSteps sagaWorkFlowStep : sagaWorkFlowSteps) {
                 sagaWorkFlowStep.setSaga(sagaName);
-                System.out.println(" Saga Registration -> " + sagaWorkFlowStep.toString());
+           //     System.out.println(" Saga Registration -> " + sagaWorkFlowStep.toString());
                 saga
                         .activity(sagaWorkFlowStep.getActivityName(), Class.forName(sagaWorkFlowStep.getActivityClass()))
                         .compensationActivity(sagaWorkFlowStep.getCompensationActivityName(), Class.forName(sagaWorkFlowStep.getCompensationClass()));
