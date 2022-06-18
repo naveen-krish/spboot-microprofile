@@ -1,0 +1,11 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(´ŠÆş
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(Šöšÿÿÿÿÿ
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(’î¬£8¥‰Šó0
+X
+java:S1128";Remove this unused import 'javax.annotation.PostConstruct'.(›ÅÁ8„Œ’á0
+P
+java:S1128	".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8„Œ’á0
+L
+java:S1128
+"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8…Œ’á0

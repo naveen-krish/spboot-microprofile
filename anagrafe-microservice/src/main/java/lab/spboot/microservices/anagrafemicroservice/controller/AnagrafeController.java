@@ -44,8 +44,9 @@ public class AnagrafeController {
         return jsonStr;
     }
 
-    @GetMapping("/lra")
-    public void lra() {
+   // @GetMapping("/lra")
+    @PostMapping(value = "/initiateTx", produces = "application/json")
+    public void lra(@RequestBody String jsonPayload) {
 
         try {
             String workflow = "{\n" +
@@ -71,15 +72,7 @@ public class AnagrafeController {
                     "    }\n" +
                     "  ]\n" +
                     "}\n";
-            String jsonPayload = "{\n" +
-                    "\t\n" +
-                    "\t\"firstName\":\"Naveen\",\n" +
-                    "\t\"lastName\":\"Krishnan\",\n" +
-                    "\t\"address1\":\"India\",\n" +
-                    "\t\"address2\":\"velachery\",\n" +
-                    "\t\"account\":\"009\",\n" +
-                    "\t\"accountBalance\":\"9999\"\n" +
-                    "}";
+
 
         /*
             Need to refactor using Query Param through Feign client
