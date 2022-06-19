@@ -1,6 +1,7 @@
 /Users/Navin/IdeaProjects/spboot-microservices/saga/src/main/java/it/sella/microservices/delegate/AccountCompensation.java
 /Users/Navin/IdeaProjects/spboot-microservices/saga/src/main/java/it/sella/microservices/delegate/SagaActivity.java
 /Users/Navin/IdeaProjects/spboot-microservices/saga/src/main/java/it/sella/microservices/delegate/AccountActivity.java
+/Users/Navin/IdeaProjects/spboot-microservices/saga/src/main/java/it/sella/microservices/messaging/CompensationTxReceiver.java
 /Users/Navin/IdeaProjects/spboot-microservices/saga/src/main/java/it/sella/microservices/workflow/ParentSagaWorkFlowSteps.java
 /Users/Navin/IdeaProjects/spboot-microservices/saga/src/main/java/it/sella/microservices/service/SagaTransactionManager.java
 /Users/Navin/IdeaProjects/spboot-microservices/saga/src/main/java/it/sella/microservices/engine/MicroServiceSagaProcessEngine.java
@@ -26,3 +27,4 @@
 /Users/Navin/IdeaProjects/spboot-microservices/saga/src/main/java/it/sella/microservices/dto/Customer.java
 /Users/Navin/IdeaProjects/spboot-microservices/saga/src/main/java/it/sella/microservices/delegate/AnagrafeActivity.java
 /Users/Navin/IdeaProjects/spboot-microservices/saga/src/main/java/it/sella/microservices/CsrfAutoConfiguration.java
+/Users/Navin/IdeaProjects/spboot-microservices/saga/src/main/java/it/sella/microservices/util/IdempotencyIDGenerator.java

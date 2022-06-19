@@ -29,7 +29,6 @@ public class SagaTransactionManager {
         LOG.log(Level.INFO,"INITIATING TRANSACTION SAGA -> {0} ", new Object[]{sagaName});
         ProcessInstanceWithVariables processInstance = camunda.getRuntimeService().createProcessInstanceByKey(
                         sagaName)
-
                 .setVariable(sagaName, payLoad)
                 .executeWithVariablesInReturn();
 

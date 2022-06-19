@@ -1,10 +1,13 @@
 package it.sella.microservices.delegate;
 
 import it.sella.microservices.constants.ProcessConstants;
+import org.camunda.bpm.engine.delegate.BpmnError;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.json.JSONObject;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
@@ -17,6 +20,8 @@ import java.util.regex.Pattern;
 public class AddressCompensation implements SagaCompensation {
 
     private final Logger LOG = Logger.getLogger(AddressCompensation.class.getName());
+    @Autowired
+    private JmsTemplate jmsTemplate;
 
     @Override
     public void execute(DelegateExecution execution) throws Exception {
@@ -42,8 +47,10 @@ public class AddressCompensation implements SagaCompensation {
             //     ResponseEntity<String> result = restTemplate.postForEntity(uri, address_entity_id, String.class);
          //   System.out.println("*** Executing Address Compensation -> " + address_entity_id + " status -> ");
 
-        } catch (Exception e) {
-         //   System.out.println(" Anagrafe Compensation Error -> " + e.getMessage());
+     }catch( Exception e){
+            //   System.out.println(" Anagrafe Compensation Error -> " + e.getMessage());
+            LOG.log(Level.INFO, " [ {0} ] FAILED TO EXECUTE COMPENSATION API...  -> TX_SERVICE_HOST_URL/{1} - MARKING FOR RECONCILIATION...", new Object[]{"AnagrafeSaga", getMicroServiceName(ProcessConstants.ADDRESS_ROLLBACK_SERVICE_URL)});
+            jmsTemplate.convertAndSend("compensationQueue", "FailedTxPayload");
             throw new Exception(e.getMessage());
         }
     }

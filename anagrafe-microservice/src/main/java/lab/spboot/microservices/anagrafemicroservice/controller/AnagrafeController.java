@@ -12,6 +12,7 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -118,8 +119,8 @@ public class AnagrafeController {
 //    }
 
     @PostMapping(value = "/createCustomer", produces = "application/json")
-    public String createCustomer(@RequestBody Customer customer)  {
-        System.out.println(" Anagrafe Customer Payload "+ customer.getFirstName());
+    public String createCustomer(@RequestHeader("x-idempotency-id") String txId, @RequestBody Customer customer)  {
+        System.out.println(" Creating Customer in Anagrafe System for TX-ID ->  "+txId);
 
         Customer customerEntity = anagrafeService.addCustomer(customer);
        int id = customerEntity.getId();

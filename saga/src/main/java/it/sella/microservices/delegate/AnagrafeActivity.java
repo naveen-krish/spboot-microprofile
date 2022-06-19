@@ -2,6 +2,7 @@ package it.sella.microservices.delegate;
 
 
 import it.sella.microservices.constants.ProcessConstants;
+import it.sella.microservices.util.IdempotencyIDGenerator;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -53,6 +54,7 @@ public class AnagrafeActivity implements SagaActivity {
             json = new JSONObject(payload);
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
+            headers.set("x-idempotency-id", IdempotencyIDGenerator.generateTxId());
             entity = new HttpEntity<String>(json.toString(), headers);
             ResponseEntity<String> result = restTemplate.postForEntity(uri, entity, String.class);
             LOG.log(Level.INFO, " [ {0} ] TRANSACTION API RESPONSE ->  [ {1} ] ", new Object[]{"AnagrafeSaga", result.getBody()});

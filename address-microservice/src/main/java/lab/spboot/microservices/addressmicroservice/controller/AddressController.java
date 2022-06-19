@@ -24,8 +24,9 @@ public class AddressController {
     }
 
     @PostMapping(value ="/createAddress" ,produces = "application/json")
-    public String createAddress(@RequestBody Address address){
-        System.out.println(" Address Customer Payload "+ address.getAddress1());
+    public String createAddress(@RequestHeader("x-idempotency-id") String txId,@RequestBody Address address){
+        System.out.println(" Creating Address in Address System for TX-ID "+txId);
+
         Address addressEntity = addressService.addAddress(address);
         int id = addressEntity.getId();
         JSONObject entity = new JSONObject();

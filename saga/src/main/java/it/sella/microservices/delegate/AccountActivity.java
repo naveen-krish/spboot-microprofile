@@ -47,7 +47,7 @@ public class AccountActivity implements SagaActivity {
             headers.setContentType(MediaType.APPLICATION_JSON);
             entity = new HttpEntity<String>(json.toString(), headers);
             LOG.log(Level.INFO,"[ {0} ] INVOKING TX-ENDPOINT -> {1} ", new Object[]{"AnagrafeSaga",getMicroServiceName(ProcessConstants.ACCOUNT_CREATE_SERVICE_URL)});
-
+         //   Thread.sleep(10000);
             ResponseEntity<String> result = restTemplate.postForEntity(uri, entity, String.class);
             execution.setVariable(ProcessConstants.ACCOUNT_ENTITY, result.getBody());
         //    System.out.println("*** Executing Account Activity EntityId -> " + result.getBody());

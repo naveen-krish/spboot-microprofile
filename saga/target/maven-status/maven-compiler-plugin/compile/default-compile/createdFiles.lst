@@ -7,6 +7,7 @@ it/sella/microservices/config/CamundaEngineIdGeneratorConfiguration.class
 it/sella/microservices/delegate/AddressActivity.class
 it/sella/microservices/lra/AnagrafeCompensation.class
 it/sella/microservices/workflow/ParentSagaWorkFlowSteps.class
+it/sella/microservices/messaging/CompensationTxReceiver.class
 it/sella/microservices/Test.class
 it/sella/microservices/CsrfAutoConfiguration.class
 it/sella/microservices/lra/ForwardingTransaction.class
@@ -18,6 +19,7 @@ it/sella/microservices/service/SagaTransactionManager.class
 it/sella/microservices/lra/AddressActivity.class
 it/sella/microservices/delegate/SagaActivity.class
 it/sella/microservices/delegate/AccountCompensation.class
+it/sella/microservices/util/IdempotencyIDGenerator.class
 it/sella/microservices/lra/AnagrafeActivity.class
 it/sella/microservices/config/CamundaEngineHistoryConfiguration.class
 it/sella/microservices/delegate/AccountActivity.class
