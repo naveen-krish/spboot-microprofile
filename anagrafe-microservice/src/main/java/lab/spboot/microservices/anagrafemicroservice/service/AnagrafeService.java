@@ -26,7 +26,7 @@ public class AnagrafeService {
     public void removeCustomer(String id) {
 
         try {
-            Thread.sleep(2000);
+   //         Thread.sleep(2000);
 
             System.out.println(" Rollbacking Anagrafe object " + id);
             if (repository.existsById(Integer.valueOf(id)))

@@ -175,8 +175,6 @@ w
 Gsaga/src/main/java/it/sella/microservices/lra/AnagrafeCompensation.java,4/6/46f222b8ddeac7b643c5b125f466ca8b366ab7ba
 x
 Hsaga/src/main/java/it/sella/microservices/feign/AnagrafeFeignClient.java,d/f/df0bae2277904aaa01e156b1b30628abab956f9a
-ž
-nanagrafe-microservice/src/main/java/lab/spboot/microservices/anagrafemicroservice/service/AnagrafeService.java,6/f/6f05cffad1e046c0adab76835923e8346bbda1f5
 z
 Jsaga/src/main/java/it/sella/microservices/lra/CompensatingTransaction.java,4/a/4acc33240ea980630358d52d041d51dc15476e77
 x
