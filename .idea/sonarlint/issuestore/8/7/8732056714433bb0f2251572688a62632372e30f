@@ -1,0 +1,11 @@
+
+H
+java:S1452!"&Remove usage of generic wildcard type.(›ıá›ûÿÿÿÿ8ÙÌº—0
+\
+java:S18544"?Remove this useless assignment to local variable "jmsTemplate".(ó»Û’8˜ÂÍº—0
+M
+java:S14814"0Remove this unused "jmsTemplate" local variable.(ó»Û’8šÂÍº—0
+u
+java:S1128"SRemove this unused import 'org.springframework.cloud.openfeign.EnableFeignClients'.(Š˜Â®ıÿÿÿÿ8ÖÍº—0
+o
+java:S1128"MRemove this unused import 'org.springframework.retry.annotation.EnableRetry'.(Ÿœµ˜ûÿÿÿÿ8 ÖÍº—0

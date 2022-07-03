@@ -35,7 +35,9 @@ public class AddressController {
     }
 
     @PutMapping("/deleteAddress")
-    public void deleteAddress(@RequestBody String id){
+    public ResponseEntity<String> deleteAddress(@RequestBody String id){
+
         addressService.removeAddress(id);
+        return ResponseEntity.ok(String.valueOf(id));
     }
 }

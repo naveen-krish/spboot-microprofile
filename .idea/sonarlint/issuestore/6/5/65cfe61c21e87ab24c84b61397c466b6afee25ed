@@ -1,0 +1,15 @@
+
+`	java:S1127"FDefine and throw a dedicated exception instead of using a generic one.(ŒÚ„§ÿÿÿÿÿ
+`	java:S112K"FDefine and throw a dedicated exception instead of using a generic one.(ŒÚ„§ÿÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(¢´¬İúÿÿÿÿ
+Q	java:S125,"<This block of commented-out lines of code should be removed.(‚ç¡
+W
+java:S1854H"<Remove this useless assignment to local variable "response".(°Áøœûÿÿÿÿ
+H
+java:S1481H"-Remove this unused "response" local variable.(°Áøœûÿÿÿÿ
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(”‡é¥üÿÿÿÿ
+o
+java:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸¦Âö
+k	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú³ñüÿÿÿÿ
+ª
+java:S44493"“Annotate the parameter with @javax.annotation.Nullable in method 'postForEntity' declaration, or make sure that null can not be passed as argument.(‡Ùõ

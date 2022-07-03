@@ -239,3 +239,13 @@ caddress-microservice/src/main/java/lab/spboot/microservices/addressmicroservice
 haddress-microservice/src/main/java/lab/spboot/microservices/addressmicroservice/domain/CustomerInfo.java,9/9/99363c47d2e7be52250631ffe7e31ef413cde9f1
 t
 Dsaga/src/main/java/it/sella/microservices/delegate/SagaActivity.java,a/7/a794c811bf8b2f1e3a4dfddecb613fee6df7d229
+w
+Gsaga/src/main/java/it/sella/microservices/delegate/AddressActivity.java,6/5/65cfe61c21e87ab24c84b61397c466b6afee25ed
+x
+Hsaga/src/main/java/it/sella/microservices/delegate/AnagrafeActivity.java,8/1/81d880bd0e0f6975d6a2378cbe925dedcb785fc1
+z
+Jsaga/src/main/java/it/sella/microservices/util/IdempotencyIDGenerator.java,d/c/dc403397bb0f478e937b9677bca69f09e76e0393
+<
+saga/pom.xml,c/f/cfc03c4db7ddf2a2945b13dc42844c4754fc631e
+j
+:saga/src/main/java/it/sella/microservices/Application.java,8/7/8732056714433bb0f2251572688a62632372e30f

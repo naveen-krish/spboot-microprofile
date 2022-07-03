@@ -84,7 +84,7 @@ public class AnagrafeController {
             txPayloadMap.put("Tx_payload", jsonPayload);
             lracClient.initiateTx(txPayloadMap);
         }catch (Exception e){
-            System.out.println(" Anagrafe Error -> "+e.getMessage());
+           // System.out.println(" Anagrafe Error -> "+e.getMessage());
         }
 
     }
